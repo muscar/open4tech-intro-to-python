@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <form action="log" method="POST">
+        <p>
+            <label for="level">Log level:</label>
+            <select id="level" name="level">
+                <option value="info">INFO</option>
+                <option value="warning">WARNING</option>
+                <option value="error">ERROR</option>
+            </select>
+        </p>
+        <p>
+            <label for="message">Message:</label>
+            <input  type="text" id="message" name="message"/>
+        </p>
+        <input type="submit" value="Log"/>
+    </form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+</head>
+<body>
+    <h1>Log entries:</h1>
+    <ul>
+    {% for entry in entries %}
+        <li><span>{{ entry.level }}</span> @ {{ entry.created.strftime('%Y-%m-%d %H:%M:%S') }}: {{ entry.message }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
