@@ -5,7 +5,7 @@ def count_errors(path):
     """Returns the number of error entries in the log file found at `path`, or
 `None` if the file doesn't exist."""
 
-    if not os.path.isfile(sys.argv[1]):
+    if not os.path.isfile(path):
         return
     error_count = 0
     with open(path, 'r') as input_file:
